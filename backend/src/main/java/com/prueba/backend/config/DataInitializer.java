@@ -102,18 +102,23 @@ public class DataInitializer implements CommandLineRunner {
                 String[] parts = line.split(",");
                 if (parts.length < 11) continue;
 
+                // Eliminar comillas de los campos si existen
+                for (int i = 0; i < parts.length; i++) {
+                    parts[i] = parts[i].replaceAll("^\"|\"$", "").trim();
+                }
+
                 Recibo recibo = new Recibo();
-                recibo.setUsername(parts[0].trim());
-                recibo.setNroRecibo(Integer.parseInt(parts[1].trim()));
-                recibo.setFechaPago(LocalDate.parse(parts[2].trim(), DATE_FORMATTER));
-                recibo.setPeriodo(parts[3].trim());
-                recibo.setSueldoBase(Double.parseDouble(parts[4].trim()));
-                recibo.setBonoProduccion(Double.parseDouble(parts[5].trim()));
-                recibo.setDescuentoSalud(Double.parseDouble(parts[6].trim()));
-                recibo.setDescuentoAfp(Double.parseDouble(parts[7].trim()));
-                recibo.setOtrosDescuentos(Double.parseDouble(parts[8].trim()));
-                recibo.setSueldoLiquido(Double.parseDouble(parts[9].trim()));
-                recibo.setDetalle(parts[10].trim());
+                recibo.setUsername(parts[0]);
+                recibo.setNroRecibo(Integer.parseInt(parts[1]));
+                recibo.setFechaPago(LocalDate.parse(parts[2], DATE_FORMATTER));
+                recibo.setPeriodo(parts[3]);
+                recibo.setSueldoBase(Double.parseDouble(parts[4]));
+                recibo.setBonoProduccion(Double.parseDouble(parts[5]));
+                recibo.setDescuentoSalud(Double.parseDouble(parts[6]));
+                recibo.setDescuentoAfp(Double.parseDouble(parts[7]));
+                recibo.setOtrosDescuentos(Double.parseDouble(parts[8]));
+                recibo.setSueldoLiquido(Double.parseDouble(parts[9]));
+                recibo.setDetalle(parts[10]);
 
                 reciboRepository.save(recibo);
                 count++;
