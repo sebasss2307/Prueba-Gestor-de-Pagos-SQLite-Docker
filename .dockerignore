@@ -1,0 +1,11 @@
+.git
+.gitignore
+.idea
+.vscode
+*.md
+*.bat
+backend/target
+backend/*.db
+frontend/node_modules
+frontend/dist
+frontend/.quasar

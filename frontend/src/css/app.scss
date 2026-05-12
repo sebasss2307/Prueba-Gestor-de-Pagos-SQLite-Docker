@@ -1,0 +1,362 @@
+// ============================================
+// ESTILOS GLOBALES - DISEÑO EMPRESARIAL
+// ============================================
+// Diseño formal, corporativo y profesional
+
+// ============================================
+// VARIABLES DE COLORES EMPRESARIALES
+// ============================================
+// Paleta corporativa: Azul, Naranjo y Gris
+$primary-blue: #1e40af; // Azul corporativo
+$primary-blue-light: #3b82f6; // Azul claro
+$primary-blue-dark: #1e3a8a; // Azul oscuro
+
+$secondary-orange: #f97316; // Naranjo corporativo
+$secondary-orange-light: #fb923c; // Naranjo claro
+$secondary-orange-dark: #ea580c; // Naranjo oscuro
+
+$neutral-gray: #64748b; // Gris corporativo
+$neutral-gray-light: #94a3b8; // Gris claro
+$neutral-gray-dark: #475569; // Gris oscuro
+
+$background-light: #f8fafc; // Fondo claro
+$background-white: #ffffff; // Blanco puro
+$border-color: #e2e8f0; // Bordes sutiles
+
+// ============================================
+// ANIMACIONES SUTILES Y PROFESIONALES
+// ============================================
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+// ============================================
+// COLORES SÓLIDOS CORPORATIVOS
+// ============================================
+.bg-primary {
+  background-color: $primary-blue !important;
+}
+
+.bg-secondary {
+  background-color: $secondary-orange !important;
+}
+
+.bg-neutral {
+  background-color: $neutral-gray !important;
+}
+
+.text-primary {
+  color: $primary-blue !important;
+}
+
+.text-secondary {
+  color: $secondary-orange !important;
+}
+
+.text-neutral {
+  color: $neutral-gray !important;
+}
+
+// ============================================
+// TARJETAS EMPRESARIALES
+// ============================================
+.corporate-card {
+  background: $background-white;
+  border: 1px solid $border-color;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  transition: all 0.2s ease;
+  
+  &:hover {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transform: translateY(-2px);
+  }
+}
+
+// ============================================
+// TARJETAS CON HOVER SUTIL
+// ============================================
+.card-hover {
+  transition: all 0.2s ease-in-out;
+  
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+}
+
+// ============================================
+// ANIMACIONES DE ENTRADA SUTILES
+// ============================================
+.fade-in {
+  animation: fadeIn 0.4s ease-out;
+}
+
+.slide-in {
+  animation: slideIn 0.3s ease-out;
+}
+
+// ============================================
+// BOTONES CORPORATIVOS
+// ============================================
+.corporate-btn {
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  transition: all 0.2s ease;
+  
+  &:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  }
+  
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+// ============================================
+// FONDO EMPRESARIAL LIMPIO
+// ============================================
+.corporate-bg {
+  background-color: $background-light;
+}
+
+// ============================================
+// SOMBRAS PROFESIONALES
+// ============================================
+.shadow-sm {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.shadow-md {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.shadow-lg {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.shadow-xl {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+// ============================================
+// BADGES CORPORATIVOS
+// ============================================
+.corporate-badge {
+  padding: 4px 12px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+// ============================================
+// DIVISORES SUTILES
+// ============================================
+.corporate-divider {
+  height: 1px;
+  background-color: $border-color;
+  border: none;
+}
+
+// ============================================
+// SCROLLBAR PROFESIONAL
+// ============================================
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: $background-light;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $neutral-gray-light;
+  border-radius: 4px;
+  
+  &:hover {
+    background: $neutral-gray;
+  }
+}
+
+// ============================================
+// TIPOGRAFÍA CORPORATIVA
+// ============================================
+.corporate-title {
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  color: $primary-blue-dark;
+}
+
+.corporate-subtitle {
+  font-weight: 600;
+  letter-spacing: -0.0125em;
+  color: $neutral-gray-dark;
+}
+
+.corporate-text {
+  font-weight: 400;
+  color: $neutral-gray;
+  line-height: 1.6;
+}
+
+// ============================================
+// BORDES CORPORATIVOS
+// ============================================
+.border-primary {
+  border-color: $primary-blue !important;
+}
+
+.border-secondary {
+  border-color: $secondary-orange !important;
+}
+
+.border-neutral {
+  border-color: $border-color !important;
+}
+
+// ============================================
+// ESPACIADO PROFESIONAL
+// ============================================
+.section-spacing {
+  padding: 2rem 0;
+}
+
+.card-spacing {
+  padding: 1.5rem;
+}
+
+// ============================================
+// ESTADOS HOVER SUTILES
+// ============================================
+.hover-lift {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  
+  &:hover {
+    transform: translateY(-2px);
+  }
+}
+
+// ============================================
+// ICONOS CORPORATIVOS
+// ============================================
+.corporate-icon {
+  color: $primary-blue;
+  transition: color 0.2s ease;
+  
+  &:hover {
+    color: $primary-blue-light;
+  }
+}
+
+// ============================================
+// TRANSICIONES GLOBALES SUTILES
+// ============================================
+* {
+  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+// ============================================
+// RESPONSIVE - DISEÑO ADAPTATIVO
+// ============================================
+@media (max-width: 1024px) {
+  .section-spacing {
+    padding: 1.5rem 0;
+  }
+  
+  .card-spacing {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .corporate-title {
+    font-size: 1.5rem;
+  }
+  
+  .card-hover:hover {
+    transform: translateY(-2px);
+  }
+}
+
+// ============================================
+// ELEMENTOS DE FORMULARIO CORPORATIVOS
+// ============================================
+.corporate-input {
+  border: 1px solid $border-color;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  
+  &:focus {
+    border-color: $primary-blue;
+    box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.1);
+  }
+}
+
+// ============================================
+// TABLAS CORPORATIVAS
+// ============================================
+.corporate-table {
+  border: 1px solid $border-color;
+  
+  th {
+    background-color: $background-light;
+    font-weight: 600;
+    color: $neutral-gray-dark;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+  }
+  
+  td {
+    border-top: 1px solid $border-color;
+  }
+  
+  tr:hover {
+    background-color: rgba(30, 64, 175, 0.02);
+  }
+}
+
+// ============================================
+// ALERTAS CORPORATIVAS
+// ============================================
+.corporate-alert {
+  border-left: 4px solid;
+  padding: 1rem;
+  border-radius: 4px;
+  
+  &.alert-info {
+    border-color: $primary-blue;
+    background-color: rgba(30, 64, 175, 0.05);
+  }
+  
+  &.alert-warning {
+    border-color: $secondary-orange;
+    background-color: rgba(249, 115, 22, 0.05);
+  }
+  
+  &.alert-neutral {
+    border-color: $neutral-gray;
+    background-color: rgba(100, 116, 139, 0.05);
+  }
+}

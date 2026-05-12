@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.quasar/
+.git
+.gitignore
+.idea
+.vscode
+*.log
+*.bat
+README.md
